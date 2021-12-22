@@ -1,0 +1,376 @@
+/* body style */
+body{
+  margin: 0px;
+ background-color: white;
+}
+
+/* body except header  */
+.main-div{
+  position: relative;
+  padding: 0px 20px;
+}
+
+/* GeekLib Header styling */
+header{
+ background-color:rgb(200, 195, 195);
+ display: flex;
+ height:40px;
+ align-items: center;
+ justify-content: center;
+ box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
+} 
+/* GeekLib Header's PNG styling */
+header img{
+ width: 80px;
+}
+
+.Library-Item-Table-div label{
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+}
+
+/* Add book Button Styling  */
+.add-book-btn-class-on{
+ display: flex;
+ justify-content: flex-end;
+ margin-top: 10px;
+}
+.main-add-book-btn{
+ height: 25px;
+ padding: 0px 10px 0px 10px;
+ background-color: rgb(40, 2, 100);
+ border: none;
+ border-radius: 3px;
+ color: white; 
+}
+.add-book-btn-class-off{
+  visibility: hidden ;
+}
+.ad-bok-btn-li-emty-on{
+  position: absolute;
+  top:100px;
+  left: 0%;
+  right: 0%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.ad-bok-btn-li-emty-on .main-add-book-btn{
+  margin-top: 5px;
+}
+.ad-bok-btn-li-emty-off{
+  display: none;
+}
+/* table */
+.table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  background-color: rgb(201, 187, 223);
+  table-layout: fixed;
+  width: 100%;
+}
+.table th{
+  box-sizing: border-box; 
+ border-bottom: 1px solid black;
+ height: 20px;
+}
+.table td, .table th {
+  padding: 5px 12px;
+  font-size: 12px;
+  text-align: left;
+}
+.table td{
+  height: 30px;
+}
+.table tr:nth-child(even){ background-color: white;
+}
+
+/* all button styling  */
+.header img, button,input[type=submit]{
+  cursor:pointer;
+}
+.main-add-book-btn:hover{
+  background-color: rgb(2, 66, 126);
+}
+/* edit and delete buttons styling  */
+.edit-btn,.delete-btn{
+box-sizing: border-box;
+height: 22px;
+border-radius: 3px;
+font-size: 12px;
+}
+.edit-btn:hover{
+  background-color: rgb(190, 187, 187);
+}
+.delete-btn:hover{
+background-color: rgb(173, 0, 0);
+}
+.edit-btn{
+  width: 40px;
+  margin-right: 20px;
+  border:1px solid rgb(40,2,100);
+}
+.delete-btn{
+  width: 50px;
+  border:none;
+  background-color: red;
+  color: white;
+}
+
+/* book added message button  */
+.book-added-msg-on{
+  display: block;
+  position: absolute;
+  top:15px;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: fit-content;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 3px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* background-color: black; */
+}
+.book-added-msg-off{
+  display: none;
+}
+/* fetching-book-message-on and off  */
+.fetching-book-message-off{
+  display: none;
+}
+.fetching-book-message-on{
+ position: absolute;
+ display: flex;
+ flex-direction: column;
+ top:240px;
+ left: 0; 
+ right: 0; 
+ margin-left: auto; 
+ margin-right: auto;
+ width: 120px;
+}
+.fetching-book-message-on img{
+width: 24px;
+margin: auto;
+}
+.fetching-book-message-on div{
+  margin: auto;
+}
+/* modal-prompt styling*/
+.modal-prompt-on{
+  position: absolute;
+  top:170px;
+  left: 0; 
+ right: 0; 
+ margin-left: auto; 
+ margin-right: auto;
+  width: 450px;
+  background-color:white;
+  height: 220px;
+  border-radius: 3px;
+  z-index: 2;
+  overflow: hidden;
+}
+/* modal-prompt header styling*/
+.modal-prompt-off{
+  display: none;
+}
+.modal-prompt-on .header{
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 35px;
+  padding:0 10px;
+  border-bottom: 1px solid black;
+  background-color:rgb(40, 2, 100);
+}
+.header{
+  color: white;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight:bold;
+}
+.header img{
+  width: 22px;
+}
+
+/* add or eding section details */
+
+.add-or-edit-book-details{
+  display: none;
+}
+.add-or-edit-on .add-or-edit-book-details{
+ display: block;
+ padding: 20px;
+}
+.input-element{
+  display: flex;
+  flex-direction: column;
+  }
+input[type=text]{
+  border:1px solid rgb(40, 2, 100) ;
+  border-radius: 3px;
+  height: 27px;
+  width: 190px;
+  margin-top: 3px;
+}
+input[type=text]:focus{
+  outline: none;
+}
+form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+form label{
+  font-size: 12px;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+}
+/* dt hidden in default  */
+.dt{
+  visibility: hidden;
+  font-size: 12px;
+}
+/* dt visible when error is found  */
+ .input-error-on dt{
+ visibility: visible;
+  color: red;
+}
+.input-error-on label{
+  color: red;
+}
+.input-error-on input[type=text]{
+  border:1px solid red;
+  border-radius: 3px;
+  height: 27px;
+  width: 190px;
+  margin-top: 3px;
+}
+
+.add-and-cancel-btns-on{
+width: 100%;
+display:flex;
+justify-content: flex-end;
+}
+.add-and-cancel-btns-off{
+  display: none;
+}
+.add-submit-btn{
+  display: none;
+}
+.save-btn{
+  display: none;
+}
+.save-btn:hover,.add-submit-btn:hover{
+  background-color: rgb(18, 0, 48);
+}
+.add-submit-btn-on .add-submit-btn, .save-btn-on .save-btn, .cancel-btn{
+  display: block;
+  border: none;
+  border-radius: 3px;
+  height: 25px;
+  font-size: 11px;
+  font-family:Arial, Helvetica, sans-serif;
+  padding: 3px 8px ;
+  color: white;
+}
+.add-submit-btn,.save-btn{
+  background-color: rgb(40, 2, 100);
+  margin-left: 10px;
+}
+.cancel-btn{
+  background-color: rgb(42, 42, 42);
+}
+.cancel-btn:hover{
+  background-color: rgb(0, 0, 0);
+}
+
+/* are you sure prompt */
+.are-you-sure-prompt{
+  display: none;
+}
+.are-you-sure-on .header span{
+  visibility: hidden;
+}
+.are-you-sure-on .are-you-sure-prompt{
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+.are-you-sure-on .are-you-sure-prompt img{
+  width: 60px;
+  margin-bottom: 10px;
+}
+.yes-no-btns-on{
+  margin-top: 20px;
+display: flex;
+justify-content: center;  
+}
+.yes-btn,.no-btn{
+  height: 25px;
+  width: 50px;
+  font-size: 12px;
+  border: none;
+  border-radius: 3px;
+  color: white;
+}
+.no-btn:hover{
+  background-color: rgb(0, 0, 0);
+}
+.yes-btn:hover{
+  background-color:rgb(226, 0, 0);
+  border: 1px solid black;
+  color: black;
+}
+.yes-btn{
+  margin-left: 10px;
+  background-color: rgb(40, 2, 100);
+}
+.no-btn{
+  background-color: rgb(58, 57, 57);
+}
+.yes-no-btns-off{
+  display: none;
+}
+/* modal-prompt procesing message after clicking ADD BOOK, SAVE or YES  */
+.processing-message-off{
+  display: none;
+}
+.processing-message-on{
+  position:absolute;
+  left: 0%;
+  right: 0%;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  text-align: center;
+  bottom:15px;
+  font-size: 14px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+}
+.processing-message-on img{
+  width: 17px;
+}
+.shading-div-on{
+  display: block;
+  position: absolute;
+  top:0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+.shading-div-off{
+display: none;
+}

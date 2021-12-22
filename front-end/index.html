@@ -1,0 +1,129 @@
+<html lang="en">
+<head> 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Room</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="shading-div-on"></div>
+  <!-- GeekLib Heading  -->
+  <header>
+    <img src="./Components/Components/PNG/GeekLib.png" alt="GeekLib">
+  </header>
+  <!-- except header rest of the body  -->
+  <main class=" main-div ">
+    <!-- Add Book Button -->
+    <div class="add-book-btn-class-on">
+      <button class="main-add-book-btn">Add Book</button>
+    </div>
+
+    <!-- Books List Table  -->
+    <div class="Library-Item-Table-div">
+      <label for="">Library Item List</label>
+      <table class="table">
+        <thead>
+          <th>S No.</th>
+          <th>Name</th>
+          <th>Author</th>
+          <th>Genere</th>
+          <th>Edition</th>
+          <th>Action</th>
+        </thead>
+        <tbody>
+          
+        </tbody>
+
+      </table>
+    </div>
+
+    <!-- fetching book message  -->
+    <div class="fetching-book-message-off fetching-book-message-on">
+      <img src="./Components/Components/PNG/icon-park-outline_loading.png" alt="Data Loading Logo">
+      <div>Fetching Books</div>
+    </div>
+
+    <!-- no books available message + Add Book Button  -->
+    <div class="ad-bok-btn-li-emty-on ad-bok-btn-li-emty-off">
+      <div>"No books avaliable"</div>
+      <button class="main-add-book-btn">Add Book</button>
+    </div>
+
+    <!-- "BOOK ADDED!!" "CHANGES SAVED!!" "BOOK DELETED" message -->
+    <div class="book-added-msg-on book-added-msg-off">
+      Error Message
+    </div>
+
+    <!-- Modal prompt for add, edit and alert   -->
+    <div class="modal-prompt-off modal-prompt-on  add-or-edit-on ">
+
+      <!-- modal-prompt header -->
+      <div class="header">
+        <span class="promptHeading">Add Heading</span>
+        <img src="./Components/Components/SVG/Close_icon.svg" alt="">
+      </div>
+
+      <!-- modal-prompt input elements for adding or editing details -->
+      <div class="add-or-edit-book-details">
+        <!-- form to input elements    -->
+        <form action="#" id="bookDetails">
+          <!-- label, input and DT are placed in one div -->
+          <div class="input-element name-input">
+            <label for="name">Name</label>
+            <input type="text" id="Name" name="name" class="input-area" placeholder="Enter book name">
+            <dt class="dt">Please enter "Name of the Book".</dt>
+          </div>
+
+          <div class="input-element genere-input">
+            <label for="genere">Genere</label>
+            <input type="text" class="input-area" id="Genere" name="genere" placeholder="Enter genere">
+            <dt class="dt "> Please enter "Genere Name".</dt>
+          </div>
+
+          <div class="input-element edition-input">
+            <label for="edition">Edition</label>
+            <input type="text" id="Edition" class="input-area" name="edition" placeholder="Enter edition">
+            <dt class="dt ">Please enter "Edition Name".</dt>
+          </div>
+
+          <div class="input-element author-input">
+            <label for="author">Author</label>
+            <input type="text" id="Author" class="input-area" name="author" placeholder="Enter author name">
+            <dt class="dt">Please enter "Author Name".</dt>
+          </div>
+
+          <!-- Add book and Cancel buttons are kept in one div  -->
+          <div class="add-and-cancel-btns-on">
+            <div><button class='cancel-btn'>Cancel</button></div>
+
+            <div class="submit-btn save-btn-on">
+              <input type="submit" value="Add Book" class="add-submit-btn">
+              <input type="submit" value="Save" class="save-btn">
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+      <div class="are-you-sure-prompt">
+        <img src="./Components/Components/SVG/emojione_warning.svg" alt="">
+        <dt>Are you sure you want to delete</dt>
+        <dt class="delete-book-name">"Book name to be received" ?</dt>
+        <div class="yes-no-btns-on">
+          <button class="no-btn">No</button>
+          <button class="yes-btn">Yes</button>
+        </div>
+      </div>
+      <!-- deleting book or saving book message -->
+      <div class="processing-message processing-message-off">
+        <img src="./Components/Components/SVG/icon-park-outline_loading.svg" alt="loading logo">
+        <div class="updating-message" >Saving changes</div>
+      </div>
+    </div>
+</main>
+  
+  <script src="index.js"></script>
+</body>
+
+</html>
